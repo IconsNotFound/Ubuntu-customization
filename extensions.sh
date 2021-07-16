@@ -19,6 +19,9 @@ do
 	uuid=$(echo $(echo $(echo $metaData | grep -o -P $regex) | grep -o -P $regex2) | grep -o -P $regex3)
 	mkdir -p $dstPath$uuid
 	unzip -oqq $f -d $dstPath$uuid
+	
+	gnome-extensions enable $uuid
+	gnome-extensions prefs $uuid
 done
 
 rm -r $tempDir
