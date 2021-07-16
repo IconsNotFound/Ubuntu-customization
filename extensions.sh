@@ -16,7 +16,7 @@ for f in $tempDir*.zip
 do
 	fileName=$(echo $f)
 	metaData=$(unzip -c $fileName metadata.json)
-	uuid=$(echo $(echo $(echo $metaData | grep -o -P $regex) | grep -o -P $regex) | grep -o -P $regex3)
+	uuid=$(echo $(echo $(echo $metaData | grep -o -P $regex) | grep -o -P $regex2) | grep -o -P $regex3)
 	mkdir -p $dstPath$uuid
 	unzip -oqq $f -d $dstPath$uuid
 done
