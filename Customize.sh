@@ -5,4 +5,4 @@
 . ./dash-to-dock.sh
 . ./desktop.sh
 . ./ding.sh
-. ./extension.sh
+. ./extensions.sh
