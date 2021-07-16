@@ -1,1 +1,1 @@
-# Ubuntu-dash-to-dock-customization
+# Ubuntu-customization
